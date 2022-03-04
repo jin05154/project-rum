@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>RUM 검색</title>
+    <link rel="stylesheet" href="css/SearchMain.css" />
+    <!--<script type="text/javascript" src="js/returnProductLink.js"></script>-->
+    <!--define $-->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!--아이콘 제작자 Freepik from www.flaticon.com-->
+    <!--배경사진 Image by athree23 from Pixabay-->
+    <link rel="shortcut icon" href="RUMicon2.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+
+        body {
+            background-image: url('image/onlineshop.png');
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="logo">
+                <a onClick="window.location.reload()" style="cursor: pointer;">
+                    <img class="logo_image" src="image/logo_SearchMain.png" alt="">
+                </a>
+            </div>
+        </header>
+        <section>
+            <div class="search">
+                <form action="SearchResult.html" method="GET">
+                    <input type="text" name="searchKeyword" placeholder="찾고 싶은 제품을 검색해 주세요." />
+                    <button type="submit" class="SearchMain-btn">검색</button>
+                </form>
+                <!--<button type="submit" onclick="loadData()">검색</button>-->
+                <!--https://rum-websites.s3.ap-northeast-2.amazonaws.com/SearchResult.html-->
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "keyword": "나이키",
+    "products": 
+    [
+      {
+        "title": "나이키 런닝화 에어맥스 엑시스 AA2146-100",
+        "price": "72,420",
+        "link": "https://search.shopping.naver.com/detail/lite.nhn?nv_mid=14034046962&cat_id=50003854&frm=NVSCTAB&query=%EB%82%98%EC%9D%B4%ED%82%A4+%EC%97%90%EC%96%B4%EB%A7%A5%EC%8A%A4&NaPm=ct%3Dk9r6nbz4%7Cci%3Db3e62291e1cf1fe04405ddc4bc1248fa9c3bd176%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3D09897c7e6dbd3159bce5f384f20efd3fb65de43c",
+        "image": "https://shopping-phinf.pstatic.net/main_1403404/14034046962.20191216104913.jpg?type=f300"
+      },
+      {
+        "title": "나이키 에어맥스 270 리액트 CI3866-100",
+        "price": "110,710",
+        "link": "https://search.shopping.naver.com/detail/lite.nhn?nv_mid=21708140698&cat_id=50003854&frm=NVSCTAB&query=%EB%82%98%EC%9D%B4%ED%82%A4+%EC%97%90%EC%96%B4%EB%A7%A5%EC%8A%A4&NaPm=ct%3Dk9r6pvso%7Cci%3D848427a8cba767306f56c0937abfef71b0a75505%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3D117f484c9e701a3aecf2b6da9f67bf8aa7454e94",
+        "image": "https://shopping-phinf.pstatic.net/main_2170814/21708140698.20200403032002.jpg?type=f300"
+      },
+      {
+        "title": "나이키 에어맥스 오케토 운동화 AQ2235-100",
+        "price": "44,590",
+        "link": "https://search.shopping.naver.com/detail/lite.nhn?nv_mid=18999175233&cat_id=50003854&frm=NVSCTAB&query=%EB%82%98%EC%9D%B4%ED%82%A4+%EC%97%90%EC%96%B4%EB%A7%A5%EC%8A%A4&NaPm=ct%3Dk9r6qrfk%7Cci%3D04a1910dc8e111226b381cda66f0038d1d398192%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3Dceb92aa56b2da53280ac9d253c2b69fb695e0ce8",
+        "image": "https://shopping-phinf.pstatic.net/main_1899917/18999175233.20200314010210.jpg?type=f300"
+      }
+    ]
+  }
+]

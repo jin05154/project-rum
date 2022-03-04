@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>RUM 검색결과</title>
+  <link rel="stylesheet" href="css/SearchResult.css" />
+  <script type="text/javascript" src="js/returnProductLink.js"></script>
+  <!--define $-->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!--아이콘 제작자 Freepik from www.flaticon.com-->
+  <link rel="shortcut icon" href="RUMicon2.ico">
+  <style>
+    /* 폰트 */
+    @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+  </style>
+<script>
+    // query string value 를 키워드로 받기  
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('searchKeyword');
+    console.log("검색 키워드 : " + myParam);
+    function newQueryStringValue() {
+      params.set('searchKeyword', document.getElementById('search-keyword').value);
+    }
+
+    // submit keyword as json
+    function submitform() {
+        var formData = JSON.stringify($("#submitKeyword").serializeArray());
+        $.ajax({
+            type: "POST",
+            // S3
+            url: "https://kxooovlun4.execute-api.ap-northeast-2.amazonaws.com/default/postkeyword",
+            // local test
+            //url: "https://mpp3gjjp4d.execute-api.ap-northeast-2.amazonaws.com/default/postkeyword",
+            data: formData,
+            dataType: "json",
+            contentType: "application/json"
+        });
+    }
+</script>
+
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="logo">
+        <a href="SearchMain.html" style="cursor: pointer;">
+          <img class="logo_image" src="image/logo2.png" alt="">
+        </a>
+      </div>
+      <div class="search">
+        <form action="SearchResult.html" method="GET">
+          <input type="text" name="searchKeyword" id="search-keyword" value="">
+          <button type="submit" id="search-btn" onclick="newQueryStringValue();">검색</button>
+        </form>
+      </div>
+    </header>
+    <nav class="nav">
+      <h2>NAV</h2>
+      <div class="joongo_shortcut">
+        <a href="https://cafe.naver.com/joonggonara" target="_blank">
+          <img class="joongo_link" src="image/joongonara.png">
+        </a>
+      </div>
+      <div class="karrot_shortcut">
+        <a href="https://www.daangn.com" target="_blank">
+          <img class="karrot_link" src="image/karrotmarket.png">
+        </a>
+      </div>
+      <div class="bungae_shortcut">
+        <a href="https://m.bunjang.co.kr" target="_blank">
+          <img class="bungae_link" src="image/bunjang.png">
+        </a>
+      </div>
+    </nav>
+    <section id="section">
+      <h2>상품 목록</h2>
+      <h1>상품이 없습니다.</h1>
+    </section>
+    <!--<aside class="aside">
+      <h2>최근 본 상품, 추천 상품</h2>
+    </aside>-->
+    <footer class="footer">
+      <p>Copyright © 2020 [Stop Me If You Can] All rights reserved.</p>
+      <address>Contact webmaster for more information.</address>
+    </footer>
+  </div>
+
+</body>
+
+</html>
